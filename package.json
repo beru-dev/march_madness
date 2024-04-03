@@ -5,7 +5,10 @@
   "main": "src/madness.js",
   "scripts": {
     "test": "jest",
-    "run": "tsx ./src/madness.ts"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
@@ -14,16 +17,21 @@
   "author": "Josh Berumen",
   "license": "ISC",
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
     "@types/jest": "^29.5.12",
-    "jest": "^29.7.0"
-  },
-  "dependencies": {
+    "@types/node": "^20.11.25",
+    "@types/react": "^18.2.64",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "ts-jest": "^29.1.2",
     "tsx": "^4.7.1",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.2"
   },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node"
+  "dependencies": {
+    "next": "^14.1.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.72.0"
   }
 }

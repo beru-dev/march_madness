@@ -1,0 +1,14 @@
+.bracket-game {
+    border: 1px solid gray;
+    margin: .8rem .6rem;
+    .winner {
+        font-weight: bold;
+        background-color: #b9d0ff;
+    }
+    > div {
+        padding: .3rem;
+    }
+    button {
+        margin-left: 1.5rem;
+    }
+}

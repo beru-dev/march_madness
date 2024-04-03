@@ -1,6 +1,6 @@
-import { initializeTournament, setGameWinner } from "../src/Tournament";
-import { Game, UnplayedGame } from "../src/Game";
-import { Maybe } from "../src/Maybe";
+import { initializeTournament, setGameWinner } from "../src/utils/Tournament";
+import { Game, UnplayedGame } from "../src/utils/Game";
+import { Maybe } from "../src/utils/Maybe";
 
 describe("initializeTournament", () => {
     it("should throw an error if the wrong number of games is provided", () => {

@@ -1,0 +1,35 @@
+main {
+    display: grid;
+    grid-template-areas:
+        "east east south south"
+        "east east south south"
+        "west west midwest midwest"
+        "west west midwest midwest";
+    grid-template-columns: 3fr 1fr 1fr 3fr;
+    grid-template-rows: 7fr 1fr 1fr 7fr;
+
+    gap: 1rem;
+
+    section.region {
+        z-index: 1;
+        &.east {
+            grid-area: east;
+        }
+        &.south {
+            grid-area: south;
+        }
+        &.west {
+            grid-area: west;
+        }
+        &.midwest {
+            grid-area: midwest;
+        }
+    }
+
+    section.finals {
+        grid-column: 2 / 4;
+        grid-row: 2 / 4;
+        background-color: gray;
+        z-index: 2;
+    }
+}
